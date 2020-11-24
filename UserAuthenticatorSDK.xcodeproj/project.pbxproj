@@ -10,6 +10,7 @@
 		86A16E0E256D389A00C2BB5F /* UserAuthenticatorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A16E04256D389A00C2BB5F /* UserAuthenticatorSDK.framework */; };
 		86A16E13256D389A00C2BB5F /* UserAuthenticatorSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A16E12256D389A00C2BB5F /* UserAuthenticatorSDKTests.swift */; };
 		86A16E15256D389A00C2BB5F /* UserAuthenticatorSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16E07256D389A00C2BB5F /* UserAuthenticatorSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86A16E23256D3CF700C2BB5F /* UserAuthenticatorSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A16E22256D3CF700C2BB5F /* UserAuthenticatorSDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		86A16E0D256D389A00C2BB5F /* UserAuthenticatorSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserAuthenticatorSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A16E12256D389A00C2BB5F /* UserAuthenticatorSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorSDKTests.swift; sourceTree = "<group>"; };
 		86A16E14256D389A00C2BB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A16E22256D3CF700C2BB5F /* UserAuthenticatorSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticatorSDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				86A16E07256D389A00C2BB5F /* UserAuthenticatorSDK.h */,
+				86A16E22256D3CF700C2BB5F /* UserAuthenticatorSDK.swift */,
 				86A16E08256D389A00C2BB5F /* Info.plist */,
 			);
 			path = UserAuthenticatorSDK;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					86A16E03256D389A00C2BB5F = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					86A16E0C256D389A00C2BB5F = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A16E23256D3CF700C2BB5F /* UserAuthenticatorSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		86A16E19256D389A00C2BB5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G6LNLR9M38;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iamcrazyshank.UserAuthenticatorSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		86A16E1A256D389A00C2BB5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G6LNLR9M38;
@@ -389,6 +397,7 @@
 		86A16E1C256D389A00C2BB5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6LNLR9M38;
 				INFOPLIST_FILE = UserAuthenticatorSDKTests/Info.plist;
@@ -407,6 +416,7 @@
 		86A16E1D256D389A00C2BB5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6LNLR9M38;
 				INFOPLIST_FILE = UserAuthenticatorSDKTests/Info.plist;
